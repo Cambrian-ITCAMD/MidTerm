@@ -7,6 +7,7 @@
     android:background="#808080"
     tools:context=".MainActivity">
 
+ <!-- starts spinner contains mass, length, distance, choose one -->
     <Spinner
         android:id="@+id/conversion_spinner"
         android:layout_width="255dp"
@@ -17,7 +18,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.091" />
+    <!--Ends spinner contains mass, length, distance, choose one-->
 
+    <!--starts TextView contains name of app-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="356dp"
@@ -31,7 +34,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
+    <!--Ends TextView contains name of app-->
 
+    <!-- starts display = -->
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -44,7 +49,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+    <!-- Ends display = -->
 
+    <!--starts spinner1 with list of units-->
     <Spinner
         android:id="@+id/conversion1"
         android:layout_width="105dp"
@@ -55,7 +62,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
         app:layout_constraintVertical_bias="0.193" />
+    <!--Ends spinner1 with list of units-->
 
+    <!--starts spinner2 with list of units-->
     <Spinner
         android:id="@+id/conversion2"
         android:layout_width="105dp"
@@ -66,7 +75,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
         app:layout_constraintVertical_bias="0.193" />
+    <!--Ends spinner2 with list of units-->
 
+    <!--starts enter input in EditText-->
     <EditText
         android:id="@+id/input1"
         android:layout_width="149dp"
@@ -78,7 +89,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion1"
         app:layout_constraintVertical_bias="0.086" />
+    <!--Ends enter input in EditText-->
 
+    <!--starts display output in TextView-->
     <TextView
         android:id="@+id/input2"
         android:layout_width="149dp"
@@ -93,7 +106,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion2"
         app:layout_constraintVertical_bias="0.082" />
+    <!--Ends display output in TextView-->
 
+    <!--Starts submit button-->
     <Button
         android:id="@+id/submit"
         android:layout_width="wrap_content"
@@ -105,7 +120,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
         app:layout_constraintVertical_bias="0.514" />
+    <!--Ends submit button-->
 
+    <!--Start display error message-->
     <TextView
         android:id="@+id/error"
         android:layout_width="183dp"
@@ -118,4 +135,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/conversion_spinner"
         app:layout_constraintVertical_bias="0.523" />
+    <!--Ends display error message-->
 </androidx.constraintlayout.widget.ConstraintLayout>

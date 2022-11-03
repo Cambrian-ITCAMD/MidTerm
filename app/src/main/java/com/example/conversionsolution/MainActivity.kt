@@ -144,7 +144,6 @@ class MainActivity : AppCompatActivity() {
             var error = findViewById<TextView>(R.id.error)
             //get input1 value as string
             var inputString1 = input1.text.toString()
-            var result:Double
 
             //If 'choose one' is selected in conversion_spinner-- code starts
             if(conversionSpinnerPosition=="Choose One"){
@@ -169,33 +168,33 @@ class MainActivity : AppCompatActivity() {
                     }
                     //conversion from km to mi or mi to km starts
                     if (conversionUnits1 == "km" && conversionUnits2 == "mi") {
-                        result = inputInt1 * 0.621
+                        var result = inputInt1 * 0.621
                         input2.setText("$result")
                     }
                     if (conversionUnits1 == "mi" && conversionUnits2 == "km") {
-                        result = inputInt1 * 1.609
+                        var result = inputInt1 * 1.609
                         input2.setText("$result")
                     }
                     //conversion from km to mi or mi to km Ends
 
                     //conversion from kg to lb or lb to kg starts
                     if (conversionUnits1 == "kg" && conversionUnits2 == "lb") {
-                        result = inputInt1 * 2.205
+                        var result = inputInt1 * 2.205
                         input2.setText("$result")
                     }
                     if (conversionUnits1 == "lb" && conversionUnits2 == "kg") {
-                        result = inputInt1 * 0.453
+                        var result = inputInt1 * 0.453
                         input2.setText("$result")
                     }
                     //conversion from kg to lb or lb to kg Ends
 
                     //conversion from m to cm or cm to m starts
                     if (conversionUnits1 == "m" && conversionUnits2 == "cm") {
-                        result = inputInt1 * 100.0
+                        var result = inputInt1 * 100.0
                         input2.setText("$result")
                     }
                     if (conversionUnits1 == "cm" && conversionUnits2 == "m") {
-                        result = inputInt1 * 0.01
+                        var result = inputInt1 * 0.01
                         input2.setText("$result")
                     }
                     //conversion from m to cm or cm to m ends
